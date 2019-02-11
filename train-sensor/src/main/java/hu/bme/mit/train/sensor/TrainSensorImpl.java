@@ -22,7 +22,7 @@ public class TrainSensorImpl implements TrainSensor {
 	@Override
 	public int getSpeedLimit() {
 		//elrontom ITTTT
-		return speedLimiiiit;
+		return speedLimit;
 	}
 
 	@Override
