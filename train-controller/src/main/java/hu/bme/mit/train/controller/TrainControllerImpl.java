@@ -1,5 +1,5 @@
 package hu.bme.mit.train.controller;
-
+//ez a train controller - commentelve
 import hu.bme.mit.train.interfaces.TrainController;
 
 public class TrainControllerImpl implements TrainController {
