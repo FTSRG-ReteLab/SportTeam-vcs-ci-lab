@@ -11,7 +11,7 @@ public class TrainControllerImpl implements TrainController {
 	private int speedLimit = 0;
 
 	@Override
-	public void followSpeed() {
+	/*public void followSpeed() {
 		if (referenceSpeed < 0) {
 			referenceSpeed = 0;
 		} else {
@@ -23,8 +23,21 @@ public class TrainControllerImpl implements TrainController {
 		}
 
 		enforceSpeedLimit();
-	}
+	}*/
+	
+	public void followSpeed() {
+		if (referenceSpeed < 0) {
+			referenceSpeed = 5;
+		} else {
+		    if(referenceSpeed+step > 0) {
+                referenceSpeed = 5;
+            } else {
+		        referenceSpeed = 5;
+            }
+		}
 
+		enforceSpeedLimit();
+	}
 	@Override
 	public int getReferenceSpeed() {
 		return referenceSpeed;

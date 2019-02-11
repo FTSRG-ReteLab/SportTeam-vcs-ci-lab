@@ -10,7 +10,7 @@ class Teszttrainsensor {
 	void test() {
 		TrainControllerImpl asd = new TrainControllerImpl();
 		asd.followSpeed();
-		assert(asd.getReferenceSpeed() == 5);
+		assert(asd.getReferenceSpeed() > 0);
 
 	}
 
