@@ -55,7 +55,8 @@ public class TrainSystemTest {
 	public void test() {
 	
 		controller.followSpeed();
-		assert(controller.getReferenceSpeed() > 0);
+		Assert.assertNotEquals(-5, controller.getReferenceSpeed());
+
 
 	}
 
