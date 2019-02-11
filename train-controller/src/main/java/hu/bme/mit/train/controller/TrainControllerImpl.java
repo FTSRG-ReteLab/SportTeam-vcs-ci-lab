@@ -1,6 +1,10 @@
 package hu.bme.mit.train.controller;
+<<<<<<< HEAD
 
 //kommentelve
+=======
+//ez a train controller - commentelve
+>>>>>>> 17dfcc6ae7e30e9e96b18d46e7c38c1dc5f6c6f3
 import hu.bme.mit.train.interfaces.TrainController;
 
 public class TrainControllerImpl implements TrainController {
