@@ -1,5 +1,10 @@
 # Train Speed Controller
 
+#Legnagyobb fejlec
+**felkover szoveg**
+*dolt szoveg*
+**_dolt es felkover_**
+
 This is a sample application for the verification laboratory.
 
 ## Getting started
