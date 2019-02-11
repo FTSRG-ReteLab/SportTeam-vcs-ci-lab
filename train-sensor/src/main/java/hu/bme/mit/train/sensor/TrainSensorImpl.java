@@ -1,5 +1,6 @@
 package hu.bme.mit.train.sensor;
 
+
 //branch-A kommentelve
 
 import hu.bme.mit.train.interfaces.TrainController;
