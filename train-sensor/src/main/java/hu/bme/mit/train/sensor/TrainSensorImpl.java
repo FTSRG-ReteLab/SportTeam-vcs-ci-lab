@@ -1,7 +1,12 @@
 package hu.bme.mit.train.sensor;
 
+<<<<<<< HEAD
 
 //branch-A kommentelve
+=======
+//branch-B kommentelve
+
+>>>>>>> branch-B
 import hu.bme.mit.train.interfaces.TrainController;
 import hu.bme.mit.train.interfaces.TrainSensor;
 import hu.bme.mit.train.interfaces.TrainUser;
