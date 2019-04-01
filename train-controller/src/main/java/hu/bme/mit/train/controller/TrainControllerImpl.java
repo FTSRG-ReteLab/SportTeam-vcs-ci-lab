@@ -8,7 +8,7 @@ import java.util.TimerTask;
 
 public class TrainControllerImpl implements TrainController {
 
-	public int conflict = 0;
+	private int conflict = 0;
 	private int step = 0;
 	private int referenceSpeed = 0;
 	private int speedLimit = 0;
