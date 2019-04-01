@@ -3,12 +3,28 @@ package hu.bme.mit.train.controller;
 //ez a train controller - commentelve
 import hu.bme.mit.train.interfaces.TrainController;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class TrainControllerImpl implements TrainController {
 
-	public int conflict = 0;
+	private int conflict = 0;
 	private int step = 0;
 	private int referenceSpeed = 0;
 	private int speedLimit = 0;
+
+	Timer timer = new Timer();
+
+	public TrainControllerImpl(){
+		        timer.schedule(new TimerTask() {
+					@Override
+					public void run() {
+						   followSpeed();
+					}
+				}, 500 );
+	}
+
+
 
 	@Override
 	public void followSpeed() {
@@ -24,6 +40,8 @@ public class TrainControllerImpl implements TrainController {
 
 		enforceSpeedLimit();
 	}
+
+
 	
 	/*public void followSpeed() {
 		if (referenceSpeed < 0) {
